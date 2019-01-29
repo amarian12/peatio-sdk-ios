@@ -3,11 +3,11 @@ import Foundation
 public struct Customer: Codable {
 
     public enum VerificationState: String, Codable {
-        case initial
-        case emailVerified = "email_verified"
-        case identitySubmitted = "identity_submitted"
-        case identityDenied = "identity_denied"
-        case identityApproved = "identity_approved"
+        case initial = "INITIAL"
+        case emailVerified = "EMAIL_VERIFIED"
+        case identitySubmitted = "IDENTITY_SUBMITTED"
+        case identityDenied = "IDENTITY_DENIED"
+        case identityApproved = "IDENTITY_APPROVED"
     }
 
     public let id: Int
