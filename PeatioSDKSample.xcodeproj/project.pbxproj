@@ -28,8 +28,6 @@
 		484D469F21E8B7CF00E7C3E2 /* DecodingError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */; };
 		484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */; };
 		484D46A521EC690600E7C3E2 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A421EC690600E7C3E2 /* Customer.swift */; };
-		484D46A721EC6B3700E7C3E2 /* ViewerCustomerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A621EC6B3700E7C3E2 /* ViewerCustomerOperation.swift */; };
-		484D46A921EC6B9D00E7C3E2 /* UpdateViewerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484D46A821EC6B9D00E7C3E2 /* UpdateViewerOperation.swift */; };
 		485AE37A21CA8441005AFA5C /* TaskSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */; };
 		485AE37C21CA8BAB005AFA5C /* ResourceSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */; };
 		4861311F21EDA85800E62D4E /* AssetDetailOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */; };
@@ -182,8 +180,6 @@
 		484D469E21E8B7CF00E7C3E2 /* DecodingError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError + Extension.swift"; sourceTree = "<group>"; };
 		484D46A021EC3F9800E7C3E2 /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
 		484D46A421EC690600E7C3E2 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
-		484D46A621EC6B3700E7C3E2 /* ViewerCustomerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerCustomerOperation.swift; sourceTree = "<group>"; };
-		484D46A821EC6B9D00E7C3E2 /* UpdateViewerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewerOperation.swift; sourceTree = "<group>"; };
 		485AE37921CA8441005AFA5C /* TaskSchedulerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskSchedulerTests.swift; sourceTree = "<group>"; };
 		485AE37B21CA8BAB005AFA5C /* ResourceSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceSchedulerTests.swift; sourceTree = "<group>"; };
 		4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailOperation.swift; sourceTree = "<group>"; };
@@ -388,15 +384,6 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
-		4861311A21EDA7EE00E62D4E /* Viewer */ = {
-			isa = PBXGroup;
-			children = (
-				484D46A621EC6B3700E7C3E2 /* ViewerCustomerOperation.swift */,
-				484D46A821EC6B9D00E7C3E2 /* UpdateViewerOperation.swift */,
-			);
-			path = Viewer;
-			sourceTree = "<group>";
-		};
 		4861311B21EDA80300E62D4E /* Session */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,7 +445,6 @@
 				4861311D21EDA82600E62D4E /* Asset */,
 				4861311C21EDA81400E62D4E /* Transaction */,
 				4861311B21EDA80300E62D4E /* Session */,
-				4861311A21EDA7EE00E62D4E /* Viewer */,
 				4861311821EDA7BB00E62D4E /* Order */,
 				4861311721EDA7A200E62D4E /* Account */,
 				4861311521EDA77200E62D4E /* Market */,
@@ -1025,7 +1011,6 @@
 				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
 				487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */,
 				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
-				484D46A721EC6B3700E7C3E2 /* ViewerCustomerOperation.swift in Sources */,
 				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
 				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
 				486416B821D37E3B003853BB /* APIError.swift in Sources */,
@@ -1064,7 +1049,6 @@
 				484D46A121EC3F9800E7C3E2 /* Decodable+Extension.swift in Sources */,
 				FDD37BDA21BA72050027DEBD /* OrderSide.swift in Sources */,
 				484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */,
-				484D46A921EC6B9D00E7C3E2 /* UpdateViewerOperation.swift in Sources */,
 				48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */,
 				FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */,
 				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
