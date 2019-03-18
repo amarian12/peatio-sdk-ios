@@ -66,6 +66,8 @@
 		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
 		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
 		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
+		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
 		48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
 		48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */; };
 		48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */; };
@@ -218,6 +220,8 @@
 		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
 		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
 		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
+		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
+		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
 		48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceScheduler.swift; sourceTree = "<group>"; };
 		48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTask.swift; sourceTree = "<group>"; };
@@ -380,6 +384,7 @@
 				484D468021E7272B00E7C3E2 /* CancelOrderOperation.swift */,
 				484D468E21E7488600E7C3E2 /* CreateOrderOperation.swift */,
 				484D468421E730FB00E7C3E2 /* ViewerOrdersOperation.swift */,
+				48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 				484D469021E74FEA00E7C3E2 /* WithdrawalItem.swift */,
 				484D469221E7534500E7C3E2 /* DepositItem.swift */,
 				484D468221E7296800E7C3E2 /* JustOK.swift */,
+				48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -1039,6 +1045,7 @@
 				487C7DFA21E4771B00BC8D8C /* AllMarketsOperation.swift in Sources */,
 				484D467F21E6F8EE00E7C3E2 /* AssetDepositAddressOperation.swift in Sources */,
 				4819D01E21F1E4A200775AC9 /* PriceItemOperation.swift in Sources */,
+				48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */,
 				FDD37BDE21BA7B1F0027DEBD /* Date+Extensions.swift in Sources */,
 				484D468B21E7388500E7C3E2 /* AssetPairOperation.swift in Sources */,
 				FDD37BD221BA66290027DEBD /* Ticker.swift in Sources */,
@@ -1051,6 +1058,7 @@
 				484D468121E7272B00E7C3E2 /* CancelOrderOperation.swift in Sources */,
 				48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */,
 				FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */,
+				48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */,
 				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
 				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */,
 				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,

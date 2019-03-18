@@ -10,7 +10,7 @@ public final class CreateWithdrawalOperation: RequestOperation {
     public var requestParams: [String: Any]? {
         var result = [
             "asset_uuid": param.assetUUID,
-            "amount": param.amount,
+            "amount_content_fee": param.amountContentFee,
             "target_address": param.targetAddress,
             "asset_pin": param.assetPin,
             "otp_code": param.otpCode
@@ -32,7 +32,7 @@ extension CreateWithdrawalOperation {
     public struct Param: Equatable {
 
         public let assetUUID: String
-        public let amount: String
+        public let amountContentFee: String
         public let targetAddress: String
         public let assetPin: String
         public let otpCode: String
@@ -40,14 +40,14 @@ extension CreateWithdrawalOperation {
         public let note: String?
 
         public init(assetUUID: String,
-                    amount: String,
+                    amountContentFee: String,
                     targetAddress: String,
                     assetPin: String,
                     otpCode: String,
                     memo: String?,
                     note: String?) {
             self.assetUUID = assetUUID
-            self.amount = amount
+            self.amountContentFee = amountContentFee
             self.targetAddress = targetAddress
             self.assetPin = assetPin
             self.otpCode = otpCode
