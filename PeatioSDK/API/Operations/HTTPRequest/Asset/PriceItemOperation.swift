@@ -12,6 +12,8 @@ public final class PriceItemOperation: RequestOperation {
         ]
     }
 
+    public var httpMethod: HTTPMethod { return .post }
+
     public let param: Param
 
     public init(param: Param) {
