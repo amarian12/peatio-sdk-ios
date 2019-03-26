@@ -66,8 +66,13 @@
 		487F15A421DF902D008CDB03 /* RequestOperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A321DF902D008CDB03 /* RequestOperationResult.swift */; };
 		487F15A721DF96AF008CDB03 /* CharacterSet+URLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */; };
 		487F15AB21E05CF8008CDB03 /* SubscriptionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */; };
+		48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */; };
+		48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */; };
+		48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */; };
 		48EC97C1223FAADF006A4417 /* CancelAllOrdersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */; };
 		48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */; };
+		48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */; };
+		48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */; };
 		48FFE84A21C8EAB300EE85C0 /* ResourceScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */; };
 		48FFE84B21C8EAB300EE85C0 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */; };
 		48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */; };
@@ -220,8 +225,13 @@
 		487F15A321DF902D008CDB03 /* RequestOperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOperationResult.swift; sourceTree = "<group>"; };
 		487F15A621DF96AF008CDB03 /* CharacterSet+URLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+URLEncode.swift"; sourceTree = "<group>"; };
 		487F15AA21E05CF8008CDB03 /* SubscriptionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionOperation.swift; sourceTree = "<group>"; };
+		48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetWhitelistAddressesOperation.swift; sourceTree = "<group>"; };
+		48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitelistAddress.swift; sourceTree = "<group>"; };
+		48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerWhitelistAddress.swift; sourceTree = "<group>"; };
 		48EC97C0223FAADF006A4417 /* CancelAllOrdersOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAllOrdersOperation.swift; sourceTree = "<group>"; };
 		48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchCancelOrderResult.swift; sourceTree = "<group>"; };
+		48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
+		48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAssetWhitelistAddressOperation.swift; sourceTree = "<group>"; };
 		48FFE83D21C8EAB300EE85C0 /* ResourceScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceScheduler.swift; sourceTree = "<group>"; };
 		48FFE83E21C8EAB300EE85C0 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		48FFE84121C8EAB300EE85C0 /* WebsocketTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTask.swift; sourceTree = "<group>"; };
@@ -413,6 +423,9 @@
 				4819D01D21F1E4A200775AC9 /* PriceItemOperation.swift */,
 				484D467E21E6F8EE00E7C3E2 /* AssetDepositAddressOperation.swift */,
 				4861311E21EDA85800E62D4E /* AssetDetailOperation.swift */,
+				48A89D0B224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift */,
+				48FEF53B224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift */,
+				48FEF53D224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -491,6 +504,7 @@
 				484D469221E7534500E7C3E2 /* DepositItem.swift */,
 				484D468221E7296800E7C3E2 /* JustOK.swift */,
 				48EC97C2223FAF5D006A4417 /* BatchCancelOrderResult.swift */,
+				48A89D0E224A0FE9004903BA /* WhitelistAddress.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -564,6 +578,14 @@
 				487F159721DDE4A0008CDB03 /* ViewerOrderSubscription.swift */,
 			);
 			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		48A89D0D224A0FCC004903BA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				48A89D10224A1150004903BA /* ViewerWhitelistAddress.swift */,
+			);
+			name = Assembly;
 			sourceTree = "<group>";
 		};
 		48FFE83C21C8EAB300EE85C0 /* Scheduler */ = {
@@ -704,6 +726,7 @@
 		FDD3770221B645560027DEBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				48A89D0D224A0FCC004903BA /* Assembly */,
 				487F158121DC96AD008CDB03 /* Patch */,
 				487F158021DC96A1008CDB03 /* Base */,
 			);
@@ -1017,6 +1040,7 @@
 				487F15A221DF5880008CDB03 /* RequestGenerator.swift in Sources */,
 				487F158D21DCBFE6008CDB03 /* WebSocketError.swift in Sources */,
 				487F157F21DC9230008CDB03 /* Cancellable.swift in Sources */,
+				48FEF53C224A247500C0D5CD /* CreateAssetWhitelistAddressOperation.swift in Sources */,
 				FD56FA6921C9DEA8006F7E9A /* InerWebSocketObserver.swift in Sources */,
 				48FFE84D21C8EAB300EE85C0 /* WebsocketTask.swift in Sources */,
 				486416B821D37E3B003853BB /* APIError.swift in Sources */,
@@ -1060,6 +1084,7 @@
 				FDCC082F21CA4D65009105DD /* CandlePatch.swift in Sources */,
 				48EC97C3223FAF5D006A4417 /* BatchCancelOrderResult.swift in Sources */,
 				FDD37B8C21B7E04C0027DEBD /* Trade.swift in Sources */,
+				48FEF53E224A25F800C0D5CD /* DeleteAssetWhitelistAddressOperation.swift in Sources */,
 				FDD37BDC21BA794A0027DEBD /* ISO8601DateFormatter+Extensions.swift in Sources */,
 				FDCC082921CA40BD009105DD /* TickerPatch.swift in Sources */,
 				484D46A521EC690600E7C3E2 /* Customer.swift in Sources */,
@@ -1073,6 +1098,7 @@
 				FDD37B9C21BA1C610027DEBD /* Page.swift in Sources */,
 				484D469121E74FEA00E7C3E2 /* WithdrawalItem.swift in Sources */,
 				FDCC083921CB3F25009105DD /* AccountPatch.swift in Sources */,
+				48A89D0C224A0DB2004903BA /* AssetWhitelistAddressesOperation.swift in Sources */,
 				FDD37BCE21BA65190027DEBD /* AssetPair.swift in Sources */,
 				FDD372B021B4CE610027DEBD /* RequestExecutor.swift in Sources */,
 				48FFE85621C8EAE400EE85C0 /* PeatioToken.swift in Sources */,
@@ -1091,6 +1117,8 @@
 				487F159021DCE404008CDB03 /* TickersSubscription.swift in Sources */,
 				486146E221CBA3AC006F7DF4 /* ProtobufWSTransport.swift in Sources */,
 				FDD37B9E21BA3C010027DEBD /* PeatioSDK.swift in Sources */,
+				48A89D11224A1150004903BA /* ViewerWhitelistAddress.swift in Sources */,
+				48A89D0F224A0FE9004903BA /* WhitelistAddress.swift in Sources */,
 				FDD37B9421B9091B0027DEBD /* PeatioAPI.swift in Sources */,
 				FDD372AA21B4CC690027DEBD /* APIRequestTask.swift in Sources */,
 				487F159821DDE4A0008CDB03 /* ViewerOrderSubscription.swift in Sources */,

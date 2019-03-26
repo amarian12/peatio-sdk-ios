@@ -15,7 +15,6 @@ public final class AssetDetailOperation: RequestOperation {
 extension AssetDetailOperation {
     public struct Param: Equatable {
         public let assetUUID: String
-
         public init(assetUUID: String) {
             self.assetUUID = assetUUID
         }
