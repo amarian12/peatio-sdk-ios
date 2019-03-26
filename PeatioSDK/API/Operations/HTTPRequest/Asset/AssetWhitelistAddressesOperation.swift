@@ -3,11 +3,7 @@ import Foundation
 public final class AssetWhitelistAddressesOperation: RequestOperation {
     public typealias ResultData = [ViewerWhitelistAddress]
 
-    public lazy private(set) var path: String = "/api/uc/v1/me/whitelist_addresses"
-
-    public var requestParams: [String : Any] {
-        return ["asset_uuids": param.assetPairUUIDs]
-    }
+    public lazy private(set) var path: String = "/api/uc/v1/me/whitelist_addresses?asset_uuids=\(param.assetUUIDs.joined(separator: ","))"
 
     public let param: Param
 
@@ -19,10 +15,10 @@ public final class AssetWhitelistAddressesOperation: RequestOperation {
 extension AssetWhitelistAddressesOperation {
     public struct Param: Equatable {
 
-        public let assetPairUUIDs: [String]
+        public let assetUUIDs: [String]
 
-        public init(assetPairUUIDs: [String]) {
-            self.assetPairUUIDs = assetPairUUIDs
+        public init(assetUUIDs: [String]) {
+            self.assetUUIDs = assetUUIDs
         }
     }
 }
