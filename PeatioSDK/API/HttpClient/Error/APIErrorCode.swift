@@ -1,7 +1,7 @@
 import Foundation
 
 public extension APIError {
-    public enum Code: Int64 {
+    enum Code: Int64 {
         case invalidRequest = 444
         case deserializeFailed = 445
         case emailOrPasswordError = 40102

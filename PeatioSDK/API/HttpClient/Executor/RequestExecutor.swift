@@ -1,5 +1,4 @@
 import Foundation
-import Result
 
 let requestDecoder: JSONDecoder = {
     let result = JSONDecoder()

@@ -10,7 +10,7 @@ public struct Candle: Codable {
 }
 
 public extension Candle {
-    public enum Period: String {
+    enum Period: String {
         case min1 = "MIN1"
         case min5 = "MIN5"
         case min15 = "MIN15"

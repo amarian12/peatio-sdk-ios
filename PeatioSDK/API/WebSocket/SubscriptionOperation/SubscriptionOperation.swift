@@ -12,7 +12,7 @@ public protocol SubscriptionOperation {
 }
 
 public extension SubscriptionOperation {
-    public init(paramsBuilder: () -> Parameters) {
+    init(paramsBuilder: () -> Parameters) {
         self.init(params: paramsBuilder())
     }
 }

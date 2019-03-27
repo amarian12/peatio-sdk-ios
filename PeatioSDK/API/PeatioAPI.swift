@@ -1,5 +1,4 @@
 import Foundation
-import Result
 
 public enum PeatioAPI {
 
@@ -65,7 +64,7 @@ public extension PeatioAPI {
 // MARK: - WebSocket Request
 public extension PeatioAPI {
 
-    public static func subscribe<O>(_ operation: O, onReceive: @escaping (WebSocketEvent<O>) -> Void) -> WebSocketTask where O: SubscriptionOperation {
+    static func subscribe<O>(_ operation: O, onReceive: @escaping (WebSocketEvent<O>) -> Void) -> WebSocketTask where O: SubscriptionOperation {
         return observer.subscribe(operation, onReceive: onReceive)
     }
 }

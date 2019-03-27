@@ -9,10 +9,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/peatio/peatio-sdk-ios.git", :tag => spec.version }
   spec.source_files  = "PeatioSDK", "PeatioSDK/**/*.swift", "PeatioSDK/**/**/*.swift"
-  spec.swift_version = '4.2'
+  spec.swift_version = '5.0'
  
   spec.dependency "Starscream"
-  spec.dependency "Result"
   spec.dependency "SwiftProtobuf"
 
 end

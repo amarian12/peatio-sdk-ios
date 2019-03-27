@@ -30,13 +30,13 @@ public struct Order: Codable {
 }
 
 public extension Order {
-    public enum State: String, Codable {
+    enum State: String, Codable {
         case pending = "PENDING"
         case filled = "FILLED"
         case cancelled = "CANCELLED"
     }
 
-    public struct AssetPairInfo: Codable {
+    struct AssetPairInfo: Codable {
         private enum CodingKeys: String, CodingKey {
             case uuid
             case name
